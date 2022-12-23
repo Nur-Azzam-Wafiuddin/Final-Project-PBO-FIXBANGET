@@ -16,7 +16,7 @@ namespace Final_Project_PBO_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FirstPage());
+            Application.Run(new MainForm());
         }
     }
 }

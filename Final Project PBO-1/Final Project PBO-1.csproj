@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Avalonia.0.10.18\build\Avalonia.props" Condition="Exists('..\packages\Avalonia.0.10.18\build\Avalonia.props')" />
   <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -16,6 +15,21 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -37,71 +51,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Avalonia, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.Animation, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.Animation.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.Base, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.Base.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.Controls, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.Controls.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.DesignerSupport, Version=0.7.0.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.DesignerSupport.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.DesktopRuntime, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.DesktopRuntime.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.Dialogs, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.Dialogs.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.Input, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.Input.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.Interactivity, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.Interactivity.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.Layout, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.Layout.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.Markup, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.Markup.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.Markup.Xaml, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.Markup.Xaml.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.MicroCom, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.MicroCom.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.OpenGL, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.OpenGL.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.Remote.Protocol, Version=0.10.18.0, Culture=neutral, PublicKeyToken=7ecde292c616a9f3, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.Remote.Protocol.0.10.18\lib\netstandard2.0\Avalonia.Remote.Protocol.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.Styling, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.Styling.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.Themes.Default, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.Themes.Default.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.Themes.Fluent, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.Themes.Fluent.dll</HintPath>
-    </Reference>
-    <Reference Include="Avalonia.Visuals, Version=0.10.18.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Avalonia.0.10.18\lib\net461\Avalonia.Visuals.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="JetBrains.Annotations, Version=10.3.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
-      <HintPath>..\packages\JetBrains.Annotations.10.3.0\lib\net\JetBrains.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -114,19 +68,21 @@
     <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.Bson.1.0.2\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="RestSharp, Version=108.0.3.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
       <HintPath>..\packages\RestSharp.108.0.3\lib\netstandard2.0\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
-    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Core" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
@@ -135,16 +91,8 @@
     <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
-    <Reference Include="System.Reactive, Version=5.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Reactive.5.0.0\lib\net472\System.Reactive.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System.Text.Encodings.Web, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Text.Encodings.Web.5.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
@@ -195,6 +143,24 @@
     <Compile Include="AdminPageUserList.Designer.cs">
       <DependentUpon>AdminPageUserList.cs</DependentUpon>
     </Compile>
+    <Compile Include="BoxList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BoxList.Designer.cs">
+      <DependentUpon>BoxList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOutMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CheckOutMenu.Designer.cs">
+      <DependentUpon>CheckOutMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller\AccountController.cs" />
     <Compile Include="FirstPage.cs">
       <SubType>Form</SubType>
@@ -202,11 +168,35 @@
     <Compile Include="FirstPage.Designer.cs">
       <DependentUpon>FirstPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="HistoryList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HistoryList.Designer.cs">
+      <DependentUpon>HistoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HistoryMenu.Designer.cs">
+      <DependentUpon>HistoryMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeMenu.Designer.cs">
+      <DependentUpon>HomeMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Account.cs" />
     <Compile Include="Model\ProductHistory.cs" />
@@ -232,11 +222,32 @@
     <EmbeddedResource Include="AdminPageUserList.resx">
       <DependentUpon>AdminPageUserList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BoxList.resx">
+      <DependentUpon>BoxList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOutMenu.resx">
+      <DependentUpon>CheckOutMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FirstPage.resx">
       <DependentUpon>FirstPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HistoryList.resx">
+      <DependentUpon>HistoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryMenu.resx">
+      <DependentUpon>HistoryMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeMenu.resx">
+      <DependentUpon>HomeMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -269,8 +280,31 @@
     <Content Include="imghide.png" />
     <Content Include="imgback.png" />
     <Content Include="imgtetiren.png" />
-    <Content Include="imgx.png" />
-    <Content Include="imgsee.png" />
+    <None Include="Resources\Asset 12.png" />
+    <None Include="Resources\add %281%291.png" />
+    <None Include="Resources\square-plus.png" />
+    <None Include="Resources\Asset 11.png" />
+    <None Include="Resources\Asset 1.png" />
+    <None Include="Resources\add %283%29.png" />
+    <None Include="Resources\add %282%29.png" />
+    <None Include="Resources\add %281%29.png" />
+    <None Include="Resources\cross-circle %281%29.png" />
+    <None Include="Resources\checkbox.png" />
+    <None Include="Resources\minus %281%29.png" />
+    <None Include="Resources\cross %281%29.png" />
+    <None Include="Resources\square %281%29.png" />
+    <None Include="Resources\square.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\asdasdasd1%402x1.png" />
+    <None Include="Resources\asdasdasd1%402x.png" />
+    <None Include="Resources\exit %281%29.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\bars-progress.png" />
+    <None Include="Resources\arrow-right %281%29.png" />
+    <None Include="Resources\time-past %281%29.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\list-check.png" />
+    <None Include="Resources\home %282%29.png" />
     <None Include="Resources\userlist.png" />
     <None Include="Resources\itemlistlist1.png" />
     <None Include="Resources\borrowerist1.png" />
@@ -283,7 +317,21 @@
     <None Include="Resources\tetiren.png" />
     <None Include="Resources\getstart.png" />
     <None Include="Resources\userprofile.png" />
+    <Content Include="imgx.png" />
+    <Content Include="imgsee.png" />
     <Content Include="imggetstart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -292,9 +340,6 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
-    <Error Condition="!Exists('..\packages\Avalonia.0.10.18\build\Avalonia.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Avalonia.0.10.18\build\Avalonia.props'))" />
-    <Error Condition="!Exists('..\packages\Avalonia.0.10.18\build\Avalonia.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Avalonia.0.10.18\build\Avalonia.targets'))" />
   </Target>
   <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
-  <Import Project="..\packages\Avalonia.0.10.18\build\Avalonia.targets" Condition="Exists('..\packages\Avalonia.0.10.18\build\Avalonia.targets')" />
 </Project>
