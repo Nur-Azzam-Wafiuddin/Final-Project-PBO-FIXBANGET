@@ -1,4 +1,4 @@
-﻿using Final_Project_PBO_1.Controller;
+using Final_Project_PBO_1.Controller;
 using Final_Project_PBO_1.Model;
 using System;
 using System.Collections.Generic;
@@ -51,7 +51,11 @@ namespace Final_Project_PBO_1
 
             else if (FoundUser != null && txtPasswordSignIn.Text == FoundUser.password)
             {
+
+                var homepage = new MainForm();
+
                 //var homepage = new HomePageGabut();
+
                 this.Hide();
                 //homepage.Show();
             }
