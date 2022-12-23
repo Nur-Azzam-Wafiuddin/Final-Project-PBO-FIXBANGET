@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Final_Project_PBO_1
 {
-    public partial class HomePage : Form
+    public partial class AdminPageItemList : UserControl
     {
-        public HomePage()
+        public AdminPageItemList()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

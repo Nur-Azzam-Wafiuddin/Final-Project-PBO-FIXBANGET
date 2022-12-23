@@ -115,10 +115,11 @@ namespace Final_Project_PBO_1
                 DialogResult pwnotmatch = MessageBox.Show("Your Password and Confirmation Does Not Match");
             }
             else 
-            { 
-            var homepage = new HomePage();
+            {
+            DialogResult successsignup = MessageBox.Show("Sign Up Successfully");
+            //var homepage = new HomePageGabut();
             this.Hide();
-            homepage.Show();
+            //homepage.Show();
             AccountController accountController = new AccountController();
             accountController.PostAccount(txtNameSignUp.Text, txtUsernameSignUp.Text, txtPasswordSignUp.Text);
             }

@@ -20,9 +20,9 @@ namespace Final_Project_PBO_1
 
         private void label4_Click(object sender, EventArgs e)
         {
-            var homepage = new HomePage();
+            //var homepage = new HomePageGabut();
             this.Hide();
-            homepage.Show();
+            //homepage.Show();
         }
 
         private void AdminHomePage_Load(object sender, EventArgs e)
@@ -53,14 +53,40 @@ namespace Final_Project_PBO_1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            AdminPageBorrowerList1.Hide();
+            adminPageUserList1.Hide();
+            adminPageItemList1.Show();
+
             btnBorrower.BackColor = Color.FromArgb(15, 26, 56);
             btnItem.BackColor = Color.FromArgb(242, 168, 7);
+            btnUserList.BackColor = Color.FromArgb(15, 26, 56);
         }
 
         private void btnBorrower_Click(object sender, EventArgs e)
         {
+            adminPageItemList1.Hide();
+            adminPageUserList1.Hide();
+            AdminPageBorrowerList1.Show();
+
             btnBorrower.BackColor = Color.FromArgb(242, 168, 7);
             btnItem.BackColor = Color.FromArgb(15, 26, 56);
+            btnUserList.BackColor = Color.FromArgb(15, 26, 56);
+        }
+
+        private void btnUserList_Click(object sender, EventArgs e)
+        {
+            AdminPageBorrowerList1.Hide();
+            adminPageItemList1.Hide();
+            adminPageUserList1.Show();
+
+            btnBorrower.BackColor = Color.FromArgb(15, 26, 56);
+            btnItem.BackColor = Color.FromArgb(15, 26, 56);
+            btnUserList.BackColor = Color.FromArgb(242, 168, 7);
+        }
+
+        private void adminPageBorrowerList1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
